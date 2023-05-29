@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import Image from "next/image";
 import { RiArrowDropDownFill } from "react-icons/ri";
@@ -11,36 +11,36 @@ import { FaUserCircle } from "react-icons/fa";
 
 export default function NavBar1() {
   return (
-    <div className="flex justify-between items-center p-6 w-full bg-yellow-200">
-    <div className="flex flex-col">
-      <div className=" flex gap-1 items-center">
-        <p>Educator</p>
-        <RiArrowDropDownFill />
+    <div className="flex justify-between items-center p-6 w-full shadow-[0px_2px_15px_rgba(0,0,0,0.15)]">
+      <div className="flex flex-col">
+        <div className=" flex gap-1 items-center">
+          <p>Educator</p>
+          <RiArrowDropDownFill />
+        </div>
+        <p className="text-sm">Arthshala</p>
       </div>
-      <p className="text-sm">Arthshala</p>
-    </div>
-    <div className="flex gap-4 justify-between">
-      <div className="flex gap-1 items-center">
-        <GrAppsRounded />
-        <p>Planning</p>
+      <div className="flex gap-4 justify-between">
+        <div className="flex gap-1 items-center hover:border-b-[#5364FF] hover:border-b-2">
+          <GrAppsRounded />
+          <p>Planning</p>
+        </div>
+        <div className="flex gap-1 items-center  hover:border-b-[#5364FF] hover:border-b-2 ">
+          <FiEdit />
+          <p>Documentation</p>
+        </div>
+        <div className="flex gap-1 items-center  hover:border-b-[#5364FF] hover:border-b-2">
+          <IoDocumentTextOutline />
+          <p>Housekeeping</p>
+        </div>
       </div>
-      <div className="flex gap-1 items-center">
-        <FiEdit />
-        <p>Documentation</p>
+      <div className="flex gap-2">
+        <FiSearch />
+        <BiBell />
+        <div className="flex gap-1 items-center">
+          <FaUserCircle />
+          <RiArrowDropDownFill />
+        </div>
       </div>
-      <div className="flex gap-1 items-center">
-        <IoDocumentTextOutline />
-        <p>Housekeeping</p>
-      </div>
     </div>
-    <div className="flex gap-2">
-    <FiSearch />
-    <BiBell />
-    <div className="flex gap-1 items-center">
-    <FaUserCircle />
-    <RiArrowDropDownFill />
-    </div>
-    </div>
-  </div>
-  )
+  );
 }
